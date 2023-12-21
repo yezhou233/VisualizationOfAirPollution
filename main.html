@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>四川省大气污染可视化</title>
+    <script src="./js/echarts.js"></script>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="container1">
+
+
+        <div class="detail">
+            <div class="detail_city">
+                <div class="detail_row1">
+                    <div class="cityname"></div>
+                    <div class="temp"></div>
+                    <div class="quality"></div>
+                </div>
+                <div class="detail_row2">
+                    <div class="fengsu"></div>
+                    <div class="fengxiang"></div>
+                    <div class="nengjian"></div>
+                </div>
+            </div>
+
+            <div class="pollution">
+                <div class="pollution1">
+                    <div class="PM25"></div>
+                    <div class="SO2"></div>
+                    <div class="CO"></div>
+                </div>
+                <div class="pollution2">
+                    <div class="PM10"></div>
+                    <div class="NO2"></div>
+                    <div class="O3"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="map">
+            <div class="dateSelect">
+                <div>
+                    <select name="year" id="year">
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                    </select> 年
+                </div>
+                <div>
+                    <select name="month" id="month">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select> 月
+                </div>
+
+                <div>
+                    <select name="day" id="day">
+                    </select> 日
+                </div>
+            </div>
+            <div class="sichuan"></div>
+        </div>
+
+        <div class="rank"></div>
+    </div>
+
+    <div class="container2">
+
+        <div class="coloum1">
+            <div class="parallel"></div>
+
+            <select name="element_select" id="element_select">
+                <option value="pollution">污染物</option>
+                <option value="wind">风速风向</option>
+            </select>
+        </div>
+
+
+        <div class="coloum2">
+            <div class="line"></div>
+
+            <select name="option_select" id="option_select">
+                <option value="renkou">人口</option>
+                <option value="paifang">排放</option>
+                <option value="qiwen">气温</option>
+                <option value="jiangshui">降水</option>
+                <option value="lvhua">绿化</option>
+            </select>
+        </div>
+
+    </div>
+
+    <script src="./js/dateselect.js"></script>
+    <script src="./js/sichuan_map.js"></script>
+    <script src="./js/detail.js"></script>
+    <script src="./js/parallel.js"></script>
+    <script src="./js/line.js"></script>
+    <script src="./js/rank.js"></script>
+    <script src="./js/windline.js"></script>
+    <script src="./js/elementselect.js"></script>
+</body>
+
+</html>

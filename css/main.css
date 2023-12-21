@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+
+
+/* 第一排 */
+.container1 {
+    height: 50%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.map {
+    position: relative;
+    width: 50%;
+}
+
+/* 污染物排名板块 */
+.rank {
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.25);
+    /* box-shadow: 2px 2px 5px rgb(196, 196, 196); */
+    margin-top: 8px;
+}
+
+/* 仪表盘 */
+.detail {
+    width: 18%;
+    display: flex;
+    flex-flow: column;
+    margin-top: 8px;
+
+}
+
+/* 四川地图样式 */
+.sichuan {
+    height: 100%;
+    width: 100%;
+}
+
+/* 日期选择div */
+.dateSelect {
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    display: flex;
+    flex-flow: column;
+    z-index: 1;
+}
+
+/* 选择日期的各个select */
+.dateSelect select {
+    height: 25px;
+    width: 80px;
+    text-align: center;
+    margin-right: 5px;
+    margin-top: 15px;
+}
+
+
+
+.detail_city {
+
+    height: 20%;
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 4px;
+}
+
+.detail_row1,
+.detail_row2 {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.detail_row1 div,
+.detail_row2 div {
+    box-shadow: 2px 2px 5px rgb(196, 196, 196);
+    height: 50px;
+    width: 31%;
+    font-size: 15px;
+    color: grey;
+    text-align: center;
+    font-weight: bold;
+    line-height: 50px;
+    margin: 2.6px
+}
+
+/* 污染物板块 */
+.pollution {
+    background-color: rgba(240, 240, 240, 0.6);
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.pollution1 {
+    display: flex;
+    flex-flow: column;
+    margin: 3px;
+}
+
+.pollution2 {
+    display: flex;
+    flex-flow: column;
+    margin: 3px;
+}
+
+.PM25,
+.PM10,
+.SO2,
+.NO2,
+.CO,
+.O3 {
+    width: 140px;
+    height: 150px;
+    /* border: 1px solid black; */
+}
+
+
+
+
+/* 第二排 */
+.container2 {
+    height: 50%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.coloum1,
+.coloum2 {
+    position: relative;
+}
+
+.coloum1 {
+    width: 55%;
+}
+
+.coloum2 {
+    width: 43.5%;
+}
+
+/* 平行线图 */
+.parallel {
+    margin: 9px;
+    background-color: rgba(255, 255, 255, 0.25);
+    height: 350px;
+}
+
+/* 曲线图 */
+.line {
+    margin: 9px;
+    background-color: rgba(255, 255, 255, 0.25);
+    height: 350px;
+}
+
+/* 选择因素 */
+#option_select {
+    height: 25px;
+    width: 100px;
+    text-align: center;
+    position: absolute;
+    left: 10%;
+    top: 6%
+}
+
+/* 选择元素 */
+#element_select {
+    height: 25px;
+    width: 100px;
+    text-align: center;
+    position: absolute;
+    left: 10%;
+    top: 6%
+}
