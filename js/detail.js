@@ -39,7 +39,7 @@ var data_O3 = 0
 var data_SO2 = 0
 
 var data_temp = 0
-var data_quality = 0
+var data_quality = ''
 var data_fengsu = 0
 var data_fengxiang = ''
 var data_nengjian = 0
