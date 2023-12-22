@@ -13,16 +13,18 @@ body {
     height: 50%;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .map {
     position: relative;
-    width: 50%;
+    width: 650px;
 }
 
 /* 污染物排名板块 */
 .rank {
-    width: 30%;
+    width: 500px;
     background-color: rgba(255, 255, 255, 0.25);
     /* box-shadow: 2px 2px 5px rgb(196, 196, 196); */
     margin-top: 8px;
@@ -30,7 +32,7 @@ body {
 
 /* 仪表盘 */
 .detail {
-    width: 18%;
+    width: 300px;
     display: flex;
     flex-flow: column;
     margin-top: 8px;
@@ -94,7 +96,7 @@ body {
 
 /* 污染物板块 */
 .pollution {
-    background-color: rgba(240, 240, 240, 0.6);
+    background-color: rgba(240, 240, 240, 0.3);
     display: flex;
     flex-flow: row wrap;
 }
@@ -130,6 +132,7 @@ body {
     height: 50%;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 .coloum1,
@@ -138,23 +141,21 @@ body {
 }
 
 .coloum1 {
-    width: 55%;
+    width: 750px;
 }
 
 .coloum2 {
-    width: 43.5%;
+    width: 700px;
 }
 
 /* 平行线图 */
 .parallel {
-    margin: 9px;
     background-color: rgba(255, 255, 255, 0.25);
     height: 350px;
 }
 
 /* 曲线图 */
 .line {
-    margin: 9px;
     background-color: rgba(255, 255, 255, 0.25);
     height: 350px;
 }
