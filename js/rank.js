@@ -127,7 +127,7 @@ function dataRank() {
                 {
                     name: pollutant[1],
                     type: 'bar',
-                    stack: 'Search Engine',
+                    stack: 'AD',
                     emphasis: {
                         focus: 'series'
                     },
@@ -142,7 +142,7 @@ function dataRank() {
                 {
                     name: pollutant[2],
                     type: 'bar',
-                    stack: 'Search Engine',
+                    stack: 'AD',
                     emphasis: {
                         focus: 'series'
                     },

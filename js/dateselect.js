@@ -29,6 +29,8 @@ for (var i = 1; i <= new Date(year, month, 0).getDate(); i++) {
 yearSelect.onchange = function () {
     // 更新年份
     year = yearSelect.value
+    month = monthSelect.value
+    day = daySelect.value
     // 清空日期选择框的内容
     daySelect.innerHTML = ''
     // 重新生成日期选项
@@ -56,7 +58,9 @@ yearSelect.onchange = function () {
 // 月份选择框的change事件处理函数
 monthSelect.onchange = function () {
     // 更新月份
+    year = yearSelect.value
     month = monthSelect.value
+    day = daySelect.value
     // 清空日期选择框的内容
     daySelect.innerHTML = ''
     // 重新生成日期选项
@@ -84,12 +88,15 @@ monthSelect.onchange = function () {
 // 日期选择框的change事件处理函数
 daySelect.onchange = function () {
     // 更新日期
+    year = yearSelect.value
+    month = monthSelect.value
     day = daySelect.value
     // 调用dataMap函数，更新地图
     dataMap()
 
     // 调用dataGauge函数，更新仪表盘
     dataGauge()
+
 
     dataRank()//刷新排名
 }

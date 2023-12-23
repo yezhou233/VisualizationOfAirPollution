@@ -24,6 +24,7 @@ function dataMap() {
             airData[i].value = airData[i].AQI
         }
         dataPosition() //此函数用于从airData数组中获取当天数据显示在仪表盘上
+        dataOther()
     }).done(function () {
 
 
@@ -168,6 +169,7 @@ function dataMap() {
                 cityname.innerHTML = "<p>" + get_city(city_clicked) + "</p>"
                 dataPosition()//更新仪表盘数据
                 dataGauge()//刷新仪表盘
+                dataOther()
                 element_select_change()
                 dataLine()//刷新折线图
             });

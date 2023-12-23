@@ -45,8 +45,6 @@ var data_fengxiang = ''
 var data_nengjian = 0
 function dataGauge() {
 
-    dataOther()
-
     // 设置PM2.5的仪表盘选项
     PM25_gauge.setOption({
         series: [
