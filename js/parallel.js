@@ -148,7 +148,7 @@ function dataParallel() {
                     fontSize: 12
                 },
                 formatter: function (params) {
-                    return city_clicked + '&nbsp&nbsp&nbsp&nbsp' + 'day' + params.data[7] + '<br/>' + params.data[6] + '&nbsp&nbsp&nbsp&nbsp' + params.data[0]
+                    return city_clicked + '&nbsp&nbsp&nbsp&nbsp' + 'day' + params.data[8] + '<br/>' + params.data[7] + '&nbsp&nbsp&nbsp&nbsp' + params.data[1]
                 }
             },
             parallelAxis: [
